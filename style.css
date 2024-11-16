@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+}
+
+#drum-pad-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.drum-pad {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+.drum-pad:hover {
+  background-color: #21a1f1;
+}
+
+.drum-pad:active {
+  transform: scale(0.95);
+}
+
+#display {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
